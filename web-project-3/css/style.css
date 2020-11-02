@@ -1,0 +1,546 @@
+@import 'fonts.css';
+
+body {
+   
+}
+
+ul,li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-bar {
+    background-color: #fff;
+    padding: 20px 0;
+    color: #212121;
+}
+
+.menu__item {
+    margin-left: 37px;
+}
+
+.menu__item a {
+    font-family: 'Open Sans Semibold'; 
+    font-size: 20px;
+    color: #212121;
+}
+
+.menu__item a:hover {
+    text-decoration: none;
+    color: #00897b;
+}
+
+/*Шапка*/
+
+.header {
+    background-image: url("../img/header.png");
+    padding: 180px 0;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-position: 0 100%;
+}
+
+.header__title {
+    font-family: 'Open Sans Semibold';
+    font-size: 55px;
+}
+
+.header__text {
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+.button {
+    cursor: pointer;
+    padding: 10px 25px;
+    margin: 0 10px;
+    color: #fff;
+    transition: 0.4s;
+    background: #00897b;
+    border: 2px solid #00897b;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background: transparent;
+    border: 2px solid white;
+}
+
+
+
+
+/*Про нас*/
+
+.about {
+    color: black;
+    background-color: white;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 125px;
+}
+
+.about__title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.about__text {
+    font-size: 15px;
+    margin: 30px 0 90px 0;
+    color: #212121;
+}
+
+.about_h3 {
+    font-family: 'Open Sans Semibold';
+    font-size: 20px;
+    margin: 30px 0 20px 0;
+}
+
+
+/*Наші Послуги*/
+
+.services {
+    color: black;
+    background-color: #e4fdf9;
+    text-align: center;
+    padding-top: 165px;
+    padding-bottom: 125px;
+}
+
+.our_card {
+    background-color: white;
+    padding: 50px 20px 40px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.our_card:hover {
+    background: #00897b;
+    color: white;
+    box-shadow: 0px 10px 12px -3px rgba(0,0,0,0.26);
+}
+
+.our_card:hover .icon{
+    color: white;
+}
+
+.our_card:hover .button-services{
+    color: white;
+    border: 1px solid white;
+}
+
+.icon {
+    transition: 0.3s;
+    font-size: 50px;
+    color: black;
+}
+
+.button-services {
+    transition: 0.3s;
+    text-transform: uppercase;
+    border: 1px solid black;
+    background: transparent;
+    padding: 12px 10px 12px;
+     font-family: 'Open Sans Semibold';
+}
+
+.button-services:hover{
+    cursor: pointer;
+}
+
+
+/*Портфоліо*/
+
+.portfolio {
+    padding-top: 120px;
+    padding-bottom: 135px;
+    text-align: center;
+    
+}
+
+.portfolio button:hover,
+.focused {
+    color: black;
+    border: 2px solid #00897b;
+    background: transparent;
+}
+
+.portfolio img {
+    margin-bottom: 30px;
+}
+
+.filter {
+    padding: 120px 0;
+}
+
+div[filter]:hover img {
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+
+
+.text {
+    display: none;
+}
+
+div[filter]:hover .text {
+    display: block;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: 3;
+    text-align: center;
+}
+
+.pricing {
+    color: black;
+    padding-top: 165px;
+    padding-bottom: 125px;
+    background: #f0f1f1;
+    text-align: center;
+    
+}
+
+
+.price {
+    transition: 0.3s;
+    background: #fff;
+}
+
+.price__head {
+    background-image: url(../img/pricing_bg.png);
+    padding-top: 35px;
+    padding-bottom: 55px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 211px;
+    color: #fff;
+    font-size: 50px;
+}
+
+.price__head p {
+    font-size: 25px;
+}
+
+.price__head sub {
+    font-size: 17px;
+    vertical-align: middle;
+}
+
+.price__head sup {
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+
+.price__body {
+    font-size: 17px;
+    color: #212121;
+   
+}
+
+.price__body ul li {
+    padding-top: 22px;
+    padding-bottom: 8px;
+    margin: 0 auto;
+    max-width: 175px;
+   border-bottom: 1px solid #bfbfbf; 
+}
+
+
+.price__footer {
+    padding: 45px 0;
+}
+
+.price__footer button {
+    cursor: pointer;
+    color: black;
+    border: 2px solid black;
+    background: transparent;
+    height: 60px;
+    width: 180px;
+    font-size: 20px;
+}
+
+.price__footer button:hover {
+    text-transform: uppercase;
+    color: white;
+    background: #00897b;
+    border: none;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.39);
+}
+
+
+.team {
+    color: black;
+    padding-top: 165px;
+    padding-bottom: 125px;
+    background: #fff;
+    text-align: center;
+    
+}
+
+.team h4 {
+    margin-top: 20px; 
+    font-size: 20px;
+    font-family: 'Open Sans Semibold';
+}
+
+.team p {
+    font-size: 15px;
+    margin-bottom:50px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons i:nth-child(1) {
+    color: #f0f1f1;
+}
+
+.icons i:nth-child(2) {
+    color: #00897b;
+}
+
+.icons a:hover i:nth-child(1) {
+    color: #3949ab;
+    transition: 0.4s;
+}
+
+.icons a:hover i:nth-child(2) {
+    color: #fff;
+    transition: 0.4s;
+}
+ 
+.team img {
+    margin: 0 auto;
+    max-width: 340px;
+}
+
+
+.dots-style {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.dots-style button {
+    border: none;
+    background: #00897b;
+    border-radius: 50%;
+    font-size: 0;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+}
+
+.dots-style li[class='slick-active'] button {
+    background: #3949ab;
+}
+
+
+.left > div:first-child {
+    order: 1;
+}
+
+
+.left > div:last-child {
+    order: 2;
+}
+
+.right > div:first-child {
+    order: 1;
+}
+
+
+.right > div:last-child {
+    order: 2;
+}
+
+.blog a {
+    font-size: 25px;
+    color: #00897b;
+    font-family: 'Open Sans Semibold';
+}
+
+.blog {
+    text-align: left;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.blog div {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.blog span {
+    font-size: 17px;
+    font-family: 'Open Sans Semibold';
+    margin-right: 35px;
+    
+}
+
+.blog i {
+    margin-right: 9px;
+}
+
+.blog p {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+
+.button_blog {
+    width: 220px;
+    height: 70px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 100px;
+    border: none;
+    background: #00897b;
+}
+
+.button_blog:hover {
+    cursor: pointer;
+    border: 2px solid #00897b;
+    color: black;
+    background: transparent;
+    transition: 0.4s;
+}
+
+.footer {
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    background-image: url(../img/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.footer .about__text {
+    color: #fff;
+}
+
+.fa-map-marker-alt, .fa-phone, .fa-envelope {
+    color: #fff;
+    font-size: 62px;
+}
+
+.circle {
+    background: #3949ab;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+}
+
+.circle:hover {
+    background: #00897b;
+    transition: 0.5s;
+}
+
+.circle + p {
+    font-size: 20px;
+}
+
+.footer input, .footer textarea {
+    padding: 40px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+.footer input:focus, .footer textarea:focus {
+    outline: none;
+}
+
+.footer textarea {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.form {
+    margin-top: 70px;
+}
+
+.footer button {
+    cursor: pointer;
+    color: black;
+    padding: 20px 80px;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.footer button:hover {
+    background: transparent;
+    color: white;
+    transition: 0.4s;
+    border: 2px solid #00897b;
+}
+
+.rules {
+    padding: 26px 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+#toTop {
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    border-radius: 3px;
+    background: #00897b;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+    color: #000000;
+}
+
+@media screen and (max-width:1024px) {
+    nav {
+        display: none;
+    }
+    .logo-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-icon {
+        display: block;
+        background: #00897b;
+        border: none;
+        font-size: 20px
+        height:50px;
+        width: 50px;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
